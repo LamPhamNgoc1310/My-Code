@@ -1,5 +1,5 @@
 from weapon import fists
-
+from health_bar import HealthBar
 class Character:
     # -> is the return type
     def __init__(self, name: str, health: float) -> None:
@@ -16,6 +16,7 @@ class Character:
         target.health = max(target.health, 0)
         # Idea: use overload method to calculate the damage and print the name of
         # item used
+        target.health_bar.update()
         print(f"{self.name} attacked with {self.weapon.name} and dealt {self.weapon.damage} damage")
 
 # the Hero subclass will inherit the Character class
@@ -30,6 +31,7 @@ class Hero(Character):
         # self.maxhp = health
         super().__init__(name=name, health=health)
         self.default_weapon = self.weapon
+        self.health_bar = HealthBar(self, color = "green")
 
     def equip(self, weapon) -> None:
         self.weapon = weapon
@@ -40,7 +42,9 @@ class Hero(Character):
         self.weapon = self.default_weapon
 
 
+
 class Enemy(Character):
     def __init__(self, name: str, health: float, weapon) -> None:
         super().__init__(name=name, health=health)
         self.weapon = weapon
+        self.health_bar = HealthBar(self, color = "red")
