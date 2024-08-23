@@ -1,0 +1,43 @@
+import turtle
+turtle.shape("turtle")
+# 1st number
+turtle.right(90)
+turtle.forward(50)
+# space between 
+turtle.left(90)
+turtle.penup()
+turtle.forward(50)
+# 2nd number 
+turtle.left(90)
+turtle.forward(50)
+turtle.pendown()
+turtle.right(90)
+turtle.forward(50)
+turtle.right(90)
+turtle.forward(25)
+turtle.right(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(25)
+turtle.left(90)
+turtle.forward(50)
+# space between
+turtle.penup()
+turtle.forward(50)
+# 3rd number
+turtle.left(90)
+turtle.forward(50)
+turtle.pendown()
+turtle.right(90)
+turtle.forward(50)
+turtle.right(90)
+turtle.forward(25)
+turtle.right(90)
+turtle.forward(30)
+turtle.backward(30)
+turtle.left(90)
+turtle.forward(25)
+turtle.right(90)
+turtle.forward(50)
+
+turtle.exitonclick()

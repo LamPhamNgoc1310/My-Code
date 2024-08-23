@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    background-color: brown;
+}
+#background-image{
+    width: 100%;
+    height: 600px;
+    background-image: url(https://scontent.fhan9-1.fna.fbcdn.net/v/t1.6435-9/50876765_2185003341751518_730583407452487680_n.jpg?_nc_cat=102&ccb=1-4&_nc_sid=e3f864&_nc_ohc=QI_J-SsDftsAX97PjrC&_nc_ht=scontent.fhan9-1.fna&oh=11907f682bed7ded13d12fe59c5da491&oe=6133ED14);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.avatar{
+    margin-top: -150px;
+
+}
+
+img{
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+hr{
+    width: 50%;
+}
+.Favourite{
+    width: 90%;
+    margin:auto;
+    color: wheat;
+}
